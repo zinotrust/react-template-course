@@ -9,7 +9,7 @@
   }
   .content {
     min-height: 70vh;
-    width: 100%;
+    width: calc(100% - 60px);
     padding: 1rem;
     background-color: #eee;
   }
