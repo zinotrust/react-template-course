@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <header>
       <div className={styles.header}>
-        {logo}
+        <span className={styles.logoHeader}>{logo}</span>
 
         <nav
           className={

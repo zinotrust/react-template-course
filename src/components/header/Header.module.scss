@@ -13,7 +13,7 @@ header {
 
   .header {
     width: 100%;
-    height: 8rem;
+    height: 7rem;
     max-width: 1000px;
     margin: 0 auto;
     padding: 1rem;
@@ -104,6 +104,9 @@ header {
   }
 
   @media screen and (max-width: 800px) {
+    .logoHeader {
+      margin-left: 60px;
+    }
     nav {
       display: block;
       position: absolute;

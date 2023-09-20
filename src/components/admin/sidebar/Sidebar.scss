@@ -12,7 +12,8 @@ main {
 .sidebar {
   // position: relative;
   width: 230px;
-  min-height: 70vh;
+  height: 100%;
+  min-height: 100vh;
   flex-shrink: 0;
   background-color: var(--color-white);
   overflow: auto;
@@ -28,7 +29,7 @@ main {
   // border-bottom: 2px solid #ccc;
   transition: all 0.5s;
   background-color: var(--light-blue);
-  height: 70px;
+  height: 7rem;
   z-index: 999;
 }
 .logo {
@@ -151,6 +152,14 @@ a {
 }
 
 @media screen and (max-width: 800px) {
+  .sidebar {
+    // position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+  }
+
   .sidebar-overlay {
     position: fixed;
     top: 0;
@@ -161,7 +170,7 @@ a {
     background-color: rgba(0, 0, 0, 0.7);
     transform: translateX(-200%);
     transition: all 0.5s;
-    z-index: 0;
+    z-index: 1;
   }
 
   .show-overlay {
